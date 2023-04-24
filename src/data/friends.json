@@ -1,0 +1,44 @@
+[
+    {
+        "_id": 1,
+        "name": "Akshansh",
+        "bio": "Living life as it is",
+        "status": "active",
+        "img": "http://dummyimage.com/230x100.png/ff4444/ffffff"
+    },
+    {
+        "_id": 2,
+        "name": "Saakshi",
+        "bio": "In an anime",
+        "status": "deactive",
+        "img": "http://dummyimage.com/111x100.png/cc0000/ffffff"
+    },
+    {
+        "_id": 3,
+        "name": "Saumya",
+        "bio": "What is this?",
+        "status": "active",
+        "img": "http://dummyimage.com/200x100.png/dddddd/000000"
+    },
+    {
+        "_id": 4,
+        "name": "Fahem",
+        "bio": "Momento Mori",
+        "status": "active",
+        "img": "http://dummyimage.com/230x100.png/ff4444/ffffff"
+    },
+    {
+        "_id": 5,
+        "name": "Krit",
+        "bio": "Designing",
+        "status": "deactive",
+        "img": "http://dummyimage.com/111x100.png/cc0000/ffffff"
+    },
+    {
+        "_id": 6,
+        "name": "Vansh",
+        "bio": "Asleep",
+        "status": "active",
+        "img": "http://dummyimage.com/200x100.png/dddddd/000000"
+    }
+]
