@@ -35,7 +35,7 @@
                         <v-list-item><v-btn text>Tracker</v-btn></v-list-item>
                         <v-list-item><v-btn text>Invite</v-btn></v-list-item>
                         <v-list-item><v-btn text @click="$router.push('/blog')">Bookmarks</v-btn></v-list-item>
-                        <v-list-item><v-btn text>Settings</v-btn></v-list-item>
+                        <v-list-item><v-btn text @click="$router.push('/settings')">Settings</v-btn></v-list-item>
                     </v-list>
                     <div class="sidebar_title" style="color:blue">Followed Hashtags</div>
                     <div class="recent">
@@ -56,9 +56,9 @@
                     <textarea rows="2" placeholder="Write a post"></textarea>
                 </div>
                 <div class="create-post-links">
-                    <li><v-icon color="grey">mdi-volume-high</v-icon>Audio</li>
-                    <li><v-icon color="grey">mdi-pencil</v-icon>Article</li>
-                    <li><v-icon color="grey">mdi-calendar-month</v-icon>Event</li>
+                    <li><button><v-icon color="grey">mdi-volume-high</v-icon>Audio</button></li>
+                    <li><v-icon color="grey">mdi-pencil</v-icon>Article </li>
+                    <li><v-icon color="grey">mdi-calendar-month</v-icon><input type="date" id="birthday" name="birthday"></li>
                     <li>post</li>
                 </div>
             </div>
@@ -73,22 +73,60 @@
                     <div>
                         <h1>Fahem Ahmed</h1>
                         <small>Friend</small>
-                        <small>2hours ago</small>
+                        <small>2 hours ago</small>
                     </div>
                 </div>
                 <p>
                     just finished my interview for Bajaj, honestly very excited about the outcomes
                     
 
-                <div class="post-stats">
+                <div class="post-activity">
+                    <div class="post-activity-links"> 
+                        <span><v-icon color="grey">mdi-comment</v-icon> comment</span>
+                    </div>
+
 
                 </div>
+                </p>
+            </div>
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="@/assets/images/kritdp.png">
+                    <div>
+                        <h1>Krit Sinha</h1>
+                        <small>Friend</small>
+                        <small>3 hours ago</small>
+                    </div>
+                </div>
+                <p>
+                   <audio controls> <source src="@/assets/images/kritaudio2.ogg" type="audio/ogg"></audio> 
+                    
                 <div class="post-activity">
+                    <div class="post-activity-links"> 
+                        <span><v-icon color="grey">mdi-comment</v-icon> comment</span>
+                    </div>
 
 
-                    <div class="post-activity-links">
-                        
-                        <span><v-icon color="grey">mdi-comment</v-icon>comment</span>
+                </div>
+                </p>
+            </div>
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="@/assets/images/dp.jpeg">
+                    <div>
+                        <h1>Tania Muley</h1>
+                        <small>You</small>
+                        <small>3 hours ago</small>
+                    </div>
+                </div>
+                <p>
+                    Currently developing allies! &#128564;
+                    
+                <div class="post-activity">
+                    <div class="post-activity-links"> 
+                        <span><v-icon color="grey">mdi-comment</v-icon> comment</span>
                     </div>
 
 
