@@ -1,4 +1,4 @@
-# librarian
+# Allies
 
 ## Project setup
 ```
