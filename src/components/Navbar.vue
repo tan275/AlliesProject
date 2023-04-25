@@ -4,7 +4,10 @@
       <div class="d-flex align-center">
         <v-img alt="Vuetify Logo" class="shrink mr-2" contain src="@/assets/images/allieslogo.png"
           transition="scale-transition" width="100" />
+
       </div>
+      <p>ScreenTime</p>
+      
 
       <v-spacer></v-spacer>
       <v-btn text @click="$router.push('/feed')"> <v-icon color="grey">mdi-home</v-icon>
@@ -76,6 +79,26 @@
 export default {
 
 }
+
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+p {
+  color: black;
+  padding-left: 10rem;
+  padding-top: 1rem;
+
+}
+
+#seconds {
+  font-size: 5em;
+}
+
+#minutes {
+  font-size: 5em;
+}
+
+#colon {
+  font-size: 5em;
+}
+</style>

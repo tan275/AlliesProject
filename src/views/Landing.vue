@@ -5,7 +5,7 @@
             <div class="heading">
                 <h2> A Social Media That Lifts You Up!
                 </h2>
-                <p class="join"><v-btn elevation="0" color="#FF8469" class="join" rounded large>Join Allies</v-btn></p>
+                <p class="join"><v-btn elevation="0" color="#FF8469" class="join" rounded large  @click="$router.push('/register')">Join Allies</v-btn></p>
                 <img src="@/assets/images/landingbg.png">
 
             </div>
@@ -62,7 +62,7 @@
                     <div class="column">
                         <h3>Deepen your relationships.</h3>
                         <p>We believe in quality over quantity.</p>
-                        <v-btn color="#FF8469" class="white--text" rounded large>Join Us</v-btn>
+                        <v-btn color="#FF8469" class="white--text" rounded large @click="$router.push('/register')">Join Us</v-btn>
                     </div>
                     <div class="column">
                         <br>
@@ -82,11 +82,13 @@
                 </div>
             </div>
         </div>
+        <BottomNav></BottomNav>
     </div>
 </template>
 
 <script>
 import LandingNavbar from '../components/LandingNav.vue'
+import BottomNav from '../components/BottomNavbar.vue'
 import emailjs from 'emailjs-com'
 export default {
     data() {
@@ -96,7 +98,8 @@ export default {
         }
     },
     components: {
-        LandingNavbar
+        LandingNavbar,
+        BottomNav
     },
     methods: {
         sendEmail(e) {

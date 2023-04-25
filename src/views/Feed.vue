@@ -172,9 +172,11 @@
 
 <script>
 import Navbar from '../components/Navbar.vue'
+import BottomNav from '../components/BottomNavbar.vue'
     export default {
         components:{
-            Navbar
+            Navbar,
+            BottomNav
         }
     }
 </script>
