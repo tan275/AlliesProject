@@ -31,8 +31,12 @@
         <div v-show="error" class="error">{{ this.errorMsg }}</div>
       </div>
 
-      <button >Sign Up</button>
+      <button class="regular">
+        <h3>Sign Up</h3>
+      </button>
       <div class="angle"></div>
+      <p>Or Sign Up using</p>
+      <button @click="googleSignin"><img src="@/assets/images/googlelogo.png"></button>
     </form>
 
     <div class="background"></div>
@@ -42,6 +46,7 @@
 <script>
 import { createUserWithEmailAndPassword } from 'firebase/auth'
 import { auth } from '../firebase/init.js'
+import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth'
 
 
 export default {
@@ -64,6 +69,13 @@ export default {
           console.log("error!")
         })
     },
+
+    googleSignin() {
+      const provider = new GoogleAuthProvider();
+      signInWithPopup(auth, provider);
+    },
+
+
   }
 }
 </script>
@@ -191,5 +203,16 @@ export default {
     @media (min-width: 900px) {
       display: initial;
     }
+  }
+
+
+  h3 {
+    padding: 1rem;
+    color: #FF8469;
+  }
+
+  img {
+    width: 30px;
+    height: 30px;
   }
 }</style>

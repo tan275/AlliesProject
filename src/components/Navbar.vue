@@ -6,7 +6,11 @@
           transition="scale-transition" width="100" />
 
       </div>
-      <p>ScreenTime</p>
+      <center><h4> &nbsp;  Screen Time on Allies</h4>
+                       <div class="timer">
+                       <h3 id = "countup"></h3>
+                       <span id="minutes"></span>:<span id="seconds"></span>
+                       </div></center>
       
 
       <v-spacer></v-spacer>
@@ -79,7 +83,13 @@
 export default {
 
 }
+var second = 0;
 
+function upTimer ( count ) { return count > 9 ? count : "0" + count; }
+setInterval( function(){
+document.getElementById("seconds").innerHTML= upTimer(++second % 60);
+document.getElementById("minutes").innerHTML= upTimer(parseInt(second / 60, 10));
+}, 1000);
 </script>
 
 <style lang="scss" scoped>
@@ -90,15 +100,13 @@ p {
 
 }
 
-#seconds {
-  font-size: 5em;
+h4{
+  color: black;
 }
 
-#minutes {
-  font-size: 5em;
+.timer{
+  color: black;
 }
 
-#colon {
-  font-size: 5em;
-}
+
 </style>

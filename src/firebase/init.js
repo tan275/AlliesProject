@@ -1,15 +1,16 @@
 import { initializeApp } from 'firebase/app'
 import { getFirestore }  from 'firebase/firestore'
 import { getAuth } from 'firebase/auth'
+import { getAnalytics } from "firebase/analytics"
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBMx-8TbdHPafSmN-CG2hnwv9RTuWvys78",
-    authDomain: "allies-162e9.firebaseapp.com",
-    projectId: "allies-162e9",
-    storageBucket: "allies-162e9.appspot.com",
-    messagingSenderId: "449588580382",
-    appId: "1:449588580382:web:faef4cf29acaf120825e0f"
-  };
+  apiKey: "AIzaSyAXlIeWb5T_X3uHtyHNW94dQsMCPAD6RcA",
+  authDomain: "allies-project-aadaf.firebaseapp.com",
+  projectId: "allies-project-aadaf",
+  storageBucket: "allies-project-aadaf.appspot.com",
+  messagingSenderId: "602105574039",
+  appId: "1:602105574039:web:ffa5c523078703b9f46fd2"
+};
 
 // init firebase
 initializeApp(firebaseConfig)
@@ -18,3 +19,5 @@ initializeApp(firebaseConfig)
 export const db = getFirestore()
 // generate & export auth object
 export const auth = getAuth()
+
+const analytics = getAnalytics(app);

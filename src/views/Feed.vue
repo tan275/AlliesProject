@@ -182,7 +182,8 @@ import BottomNav from '../components/BottomNavbar.vue'
 </script>
 
 <style lang="scss" scoped >
+@import url('@/assets/profile.css');
 .body{
     background-color: #f5f5f5
 }
-@import url('@/assets/profile.css');</style>
+</style>
