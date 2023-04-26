@@ -68,9 +68,9 @@
                         <br>
                         <v-list>
                             <v-list-item><v-btn text>About Us</v-btn></v-list-item>
-                            <v-list-item><v-btn text>Community Guidelines</v-btn></v-list-item>
+                            <v-list-item><v-btn text @click="$router.push('/guidelines')">Community Guidelines</v-btn></v-list-item>
 
-                            <v-list-item><v-btn text>Terms</v-btn></v-list-item>
+                            <v-list-item><v-btn text @click="$router.push('/terms')">Terms</v-btn></v-list-item>
                             <v-list-item><v-btn text>Blogs</v-btn></v-list-item>
                             <v-list-item><v-btn text>Wellbeing</v-btn></v-list-item>
                         </v-list>

@@ -64,6 +64,7 @@ export default {
         .then((credential) => {
           // registered and signed in
           console.log(credential.user)
+          this.$router.push('profile');
         })
         .catch(() => {
           console.log("error!")
@@ -72,7 +73,10 @@ export default {
 
     googleSignin() {
       const provider = new GoogleAuthProvider();
-      signInWithPopup(auth, provider);
+      signInWithPopup(auth, provider).then(() => {
+        this.$router.push('profile');
+      });
+      
     },
 
 
@@ -215,4 +219,5 @@ export default {
     width: 30px;
     height: 30px;
   }
-}</style>
+}
+</style>

@@ -9,7 +9,7 @@
         <v-spacer></v-spacer>
         <v-btn text color="black" @click="$router.push('/feed')"> our mission
         </v-btn>
-        <v-btn text color="black" @click="$router.push('/feed')"> faq's
+        <v-btn text color="black" @click="$router.push('/faq')"> faq's
         </v-btn>
         <v-btn text color="black" @click="$router.push('/login')"> login
         </v-btn>
@@ -17,7 +17,6 @@
         <p>la</p>
         <v-btn rounded elevation="0" color="#FF8469" @click="$router.push('/helpline')">Help</v-btn>
         <p>la</p>
-        <v-btn rounded elevation="0" color="#FF8469" @click="$router.push('/feed')">demo</v-btn>
   
       </v-app-bar>
     </div>
