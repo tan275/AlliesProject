@@ -127,7 +127,8 @@
                                     </v-list>
                                     <v-divider></v-divider>
                                     <v-list>
-                                        <v-list-item><v-date-picker v-model="date" no-title scrollable>
+                                        <v-list-item><v-date-picker v-model="date" :allowed-dates="allowedDates"
+                                                class="mt-4" min="2023-04-28" no-title scrollable>
                                             </v-date-picker>
                                         </v-list-item>
                                     </v-list>
@@ -169,15 +170,15 @@
                     <div class="post-activity">
                         <div class="post-activity-links">
 
-                            
+
                         </div>
                     </div>
                     <v-expansion-panels><v-expansion-panel>
-                                    <v-expansion-panel-header>Comments</v-expansion-panel-header>
-                                    <v-expansion-panel-content>
-                                        <p><b>Gopika Sudheer:</b> Good Luck!</p>
-                                    </v-expansion-panel-content>
-                                </v-expansion-panel></v-expansion-panels>
+                            <v-expansion-panel-header>Comments</v-expansion-panel-header>
+                            <v-expansion-panel-content>
+                                <p><b>Gopika Sudheer:</b> Good Luck!</p>
+                            </v-expansion-panel-content>
+                        </v-expansion-panel></v-expansion-panels>
                 </div>
 
                 <div class="post">
@@ -196,9 +197,9 @@
                     </p>
                     <v-divider></v-divider>
                     <v-expansion-panels><v-expansion-panel>
-                                    <v-expansion-panel-header>Comments</v-expansion-panel-header>
-                                    
-                                </v-expansion-panel></v-expansion-panels>
+                            <v-expansion-panel-header>Comments</v-expansion-panel-header>
+
+                        </v-expansion-panel></v-expansion-panels>
                 </div>
 
                 <div class="post">
@@ -214,9 +215,9 @@
                         Currently developing allies! &#128564;</p>
                     <v-divider></v-divider>
                     <v-expansion-panels><v-expansion-panel>
-                                    <v-expansion-panel-header>Comments</v-expansion-panel-header>
-                                   
-                                </v-expansion-panel></v-expansion-panels>
+                            <v-expansion-panel-header>Comments</v-expansion-panel-header>
+
+                        </v-expansion-panel></v-expansion-panels>
 
                 </div>
 

@@ -16,3 +16,12 @@ export default {
   }
 }
 </script>
+
+
+<div class="heading">
+  <h2> A Social Media That Lifts You Up!
+  </h2>
+  <p class="join"><v-btn elevation="0" color="#FF8469" class="join" rounded large  @click="$router.push('/register')">Join Allies</v-btn></p>
+  <img src="@/assets/images/landingbg.png">
+
+</div>
