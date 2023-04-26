@@ -95,9 +95,19 @@ const routes = [
     component: () => import (/* webpackChunkName: "login" */ '../views/FAQ.vue')
   },
   {
+    path: '/mission',
+    name: 'mission',
+    component: () => import (/* webpackChunkName: "login" */ '../views/Mission.vue')
+  },
+  {
+    path: '/tracker',
+    name: 'tracker',
+    component: () => import (/* webpackChunkName: "login" */ '../views/Tracker.vue')
+  },
+  {
     path: '/trial',
     name: 'trial',
-    component: () => import (/* webpackChunkName: "login" */ '../views/FAQ.vue')
+    component: () => import (/* webpackChunkName: "login" */ '../views/trial.vue')
   },
 ]
 

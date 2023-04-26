@@ -82,14 +82,17 @@
       </v-row>
     </v-container>
     </div>
+    <BottomNav></BottomNav>
     </div>
 </template>
 
 <script>
 import LandingNavbar from '../components/LandingNav.vue'
+import BottomNav from '../components/BottomNavbar.vue'
     export default {
         components: {
         LandingNavbar,
+        BottomNav
         },
     }
 </script>

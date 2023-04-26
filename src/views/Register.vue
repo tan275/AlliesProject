@@ -28,8 +28,7 @@
 
         </div>
 
-        <div v-show="error" class="error">{{ this.errorMsg }}</div>
-      </div>
+         </div>
 
       <button class="regular">
         <h3>Sign Up</h3>
@@ -49,6 +48,7 @@ import { auth } from '../firebase/init.js'
 import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth'
 
 
+
 export default {
   data() {
     return {
@@ -64,10 +64,12 @@ export default {
         .then((credential) => {
           // registered and signed in
           console.log(credential.user)
+          alert("Successfully Registered!");
           this.$router.push('profile');
         })
         .catch(() => {
           console.log("error!")
+          alert("Please re-try!");
         })
     },
 

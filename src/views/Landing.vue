@@ -67,7 +67,7 @@
                     <div class="column">
                         <br>
                         <v-list>
-                            <v-list-item><v-btn text>About Us</v-btn></v-list-item>
+                            <v-list-item><v-btn text @click="$router.push('/mission')">About Us</v-btn></v-list-item>
                             <v-list-item><v-btn text @click="$router.push('/guidelines')">Community Guidelines</v-btn></v-list-item>
 
                             <v-list-item><v-btn text @click="$router.push('/terms')">Terms</v-btn></v-list-item>

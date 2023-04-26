@@ -7,7 +7,7 @@
         </div>
   
         <v-spacer></v-spacer>
-        <v-btn text color="black" @click="$router.push('/feed')"> our mission
+        <v-btn text color="black" @click="$router.push('/mission')"> our mission
         </v-btn>
         <v-btn text color="black" @click="$router.push('/faq')"> faq's
         </v-btn>
