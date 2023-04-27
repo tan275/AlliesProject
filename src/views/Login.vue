@@ -24,9 +24,13 @@
 
       </div>
       <router-link class="forgot-password" :to="{ name: 'forgotpw' }">Forgot your password?</router-link>
+
+      
       <button class="regular">
         <h3>Sign In</h3>
       </button>
+
+
       <div class="angle"></div>
     </form>
     <div class="background"></div>

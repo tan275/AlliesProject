@@ -62,7 +62,7 @@
                     <div class="column">
                         <h3>Deepen your relationships.</h3>
                         <p>We believe in quality over quantity.</p>
-                        <v-btn color="#FF8469" class="white--text" rounded large @click="$router.push('/register')">Join Us</v-btn>
+                        
                     </div>
                     <div class="column">
                         <br>
@@ -71,8 +71,7 @@
                             <v-list-item><v-btn text @click="$router.push('/guidelines')">Community Guidelines</v-btn></v-list-item>
 
                             <v-list-item><v-btn text @click="$router.push('/terms')">Terms</v-btn></v-list-item>
-                            <v-list-item><v-btn text>Blogs</v-btn></v-list-item>
-                            <v-list-item><v-btn text>Wellbeing</v-btn></v-list-item>
+                            
                         </v-list>
                     </div>
                     <div class="column">

@@ -176,6 +176,10 @@
                     <v-expansion-panels><v-expansion-panel>
                             <v-expansion-panel-header>Comments</v-expansion-panel-header>
                             <v-expansion-panel-content>
+                                <v-text-field v-model="title" :rules="rules" counter="25"
+                                                hint="Write your comment here" label="Hello!"></v-text-field>
+                            </v-expansion-panel-content>
+                            <v-expansion-panel-content>
                                 <p><b>Gopika Sudheer:</b> Good Luck!</p>
                             </v-expansion-panel-content>
                         </v-expansion-panel></v-expansion-panels>
@@ -198,7 +202,10 @@
                     <v-divider></v-divider>
                     <v-expansion-panels><v-expansion-panel>
                             <v-expansion-panel-header>Comments</v-expansion-panel-header>
-
+                            <v-expansion-panel-content>
+                                <v-text-field v-model="title" :rules="rules" counter="25"
+                                                hint="Write your comment here" label="Hello!"></v-text-field>
+                            </v-expansion-panel-content>
                         </v-expansion-panel></v-expansion-panels>
                 </div>
 
@@ -216,7 +223,10 @@
                     <v-divider></v-divider>
                     <v-expansion-panels><v-expansion-panel>
                             <v-expansion-panel-header>Comments</v-expansion-panel-header>
-
+                            <v-expansion-panel-content>
+                                <v-text-field v-model="title" :rules="rules" counter="25"
+                                                hint="Write your comment here" label="Hello!"></v-text-field>
+                            </v-expansion-panel-content>
                         </v-expansion-panel></v-expansion-panels>
 
                 </div>
