@@ -50,10 +50,25 @@ const routes = [
     component: () => import (/* webpackChunkName: "login" */ '../views/Blog.vue')
   },
   {
-    path: '/blogview',
-    name: 'blogview',
-    component: () => import (/* webpackChunkName: "login" */ '../views/BlogArticleView.vue')
+    path: '/createblog',
+    name: 'createblog',
+    component: () => import (/* webpackChunkName: "login" */ '../views/CreateBlog.vue')
   },
+  {
+    path: '/blogview/1',
+    name: 'blogview',
+    component: () => import (/* webpackChunkName: "login" */ '../views/BlogArticle/1.vue')
+  },
+  {
+    path: '/blogview/2',
+    name: 'blogview',
+    component: () => import (/* webpackChunkName: "login" */ '../views/BlogArticle/2.vue')
+  },
+  {
+    path: '/blogview/3',
+    name: 'blogview',
+    component: () => import (/* webpackChunkName: "login" */ '../views/BlogArticle/3.vue')
+  },
   {
     path: '/settings',
     name: 'settings',
